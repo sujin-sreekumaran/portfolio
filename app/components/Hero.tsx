@@ -295,7 +295,7 @@ export default function Hero() {
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-display">
             <span className="text-white">
-              <TypingAnimation text="I'm Sai Pranay Tadakamalla" />
+              <TypingAnimation text="I'm Sujin Sreekumaran" />
             </span>
           </h1>
 
@@ -322,8 +322,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
           >
-            Building next-generation applications with ML and MERN. Transforming ideas into
-            innovative digital experiences through code and creativity.
+            Building next-generation applications with AI Agents and MERN. Transforming ideas into
+            digital experiences through code and creativity.
           </motion.p>
 
           <motion.div
@@ -333,7 +333,7 @@ export default function Hero() {
             transition={{ delay: 0.8 }}
           >
             <a
-              href="https://www.linkedin.com/in/sujin-sreekumaran-582412174/"
+              href="https://www.linkedin.com/in/sujin-sreekumaran-rani-582412174/"
               className="p-3 rounded-full bg-slate-800/80 backdrop-blur-sm border border-slate-700 hover:bg-indigo-600 hover:border-indigo-500 transition-all duration-300"
               aria-label="LinkedIn Profile"
               target="_blank"

@@ -53,7 +53,7 @@ export default function About() {
     {
       icon: <Server className="w-8 h-8 text-blue-400" />,
       title: "Backend",
-      description: "Node.js, Express.js, Flask, Django",
+      description: "Next.js, Express.js, Flask, Django, FastAPI, GraphQL",
     },
     {
       icon: <Database className="w-8 h-8 text-violet-400" />,
@@ -63,7 +63,7 @@ export default function About() {
     {
       icon: <Brain className="w-8 h-8 text-fuchsia-400" />,
       title: "AI/ML",
-      description: "Machine Learning, Deep Learning, Data Science",
+      description: "Machine Learning, AI Agents, Model Deployment",
     },
     {
       icon: <Clipboard className="w-8 h-8 text-sky-400" />,
@@ -73,7 +73,7 @@ export default function About() {
     {
       icon: <Settings className="w-8 h-8 text-teal-400" />,
       title: "Other",
-      description: "AWS, Docker, CI/CD",
+      description: "AWS, Docker, CI/CD, Git",
     },
   ];
 
@@ -105,7 +105,7 @@ export default function About() {
               </div>
 
               <p className="text-xl text-slate-300 leading-relaxed mb-6">
-                Specializing in Software Development, AI/ML, and Project Management. Skilled in
+                Specializing in Software Development, AI Agents, and Project Management. Skilled in
                 MERN, Python, Typescript, with expertise in UI/UX.
               </p>
               <p className="text-xl text-slate-300 leading-relaxed">

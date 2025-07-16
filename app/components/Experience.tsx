@@ -47,7 +47,7 @@ export default function Experience() {
     },
     {
       period: "Jun. 2021 – Jan 2022",
-      role: "Full Stack Developer",
+      role: "Full Stack Developer (Intern)",
       company: "Brototype",
       color: "blue",
       location: "Info Park, Kochi, India",

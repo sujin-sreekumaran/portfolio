@@ -18,6 +18,9 @@ import {
   Sparkles,
   Bot,
   Braces,
+  MousePointer,
+  BarChart,
+  Computer,
 } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 
@@ -71,18 +74,39 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "ElanAI",
-      description:
-        "Advanced conversational AI assistant with natural language processing capabilities",
-      techStack: "ReactJS, Python",
-      link: "https://github.com/PranayTadakamalla/ElanAI",
-      icon: <Bot className="w-6 h-6 text-indigo-400" />,
+      title: "Statistical Data Visualisation Platform",
+      description: "A web-based platform for creating interactive statistical data visualisations.",
+      techStack: "Python, JavaScript, ReactJS, D3.js",
+      link: "https://github.com/sujin-sreekumaran/Statistical-Data-Visualisation-platform",
+      demo: "https://youtu.be/4zEEHmzH1y4",
+      icon: <BarChart className="w-6 h-6 text-indigo-400" />,
       type: "github",
-      category: "AI",
+      category: "Data Visualization",
       featured: true,
     },
+    {
+      title: "Jarvis",
+      description:
+        "An AI-powered virtual assistant with Model Context Protocol and automation capabilities.",
+      techStack: "Python",
+      link: "https://github.com/Vaultified/Jarvis",
+      demo: "https://youtu.be/SkUk3IHXbQw",
+      icon: <Computer className="w-6 h-6 text-indigo-400" />,
+      type: "github",
+      category: "AI Assistant",
+      featured: true,
+    },
+    {
+      title: "Invisible Mouse",
+      description: "A tool to control your computer mouse invisibly using custom gestures.",
+      techStack: "Python",
+      link: "https://github.com/Vaultified/invisible-mouse",
+      icon: <MousePointer className="w-6 h-6 text-indigo-400" />,
+      type: "github",
+      category: "Automation",
+      featured: false,
+    },
   ];
-
   const filteredProjects = activeCategory
     ? projects.filter((project) => project.category === activeCategory)
     : projects;
@@ -161,7 +185,7 @@ export default function Projects() {
               >
                 <Card3D>
                   {/* Card with 3D effect */}
-                  <div className="bg-slate-900/80 backdrop-blur-md rounded-2xl border border-indigo-500/20 h-full flex flex-col overflow-hidden">
+                  <div className="bg-slate-900/80 backdrop-blur-md rounded-2xl border border-indigo-500/20 h-full flex flex-col overflow-hidden relative">
                     {/* Featured badge */}
                     {project.featured && (
                       <div className="absolute top-4 right-4 px-2 py-1 bg-indigo-500/20 backdrop-blur-sm rounded-full text-xs text-indigo-300 flex items-center gap-1 border border-indigo-500/30">
@@ -186,24 +210,29 @@ export default function Projects() {
                         {project.techStack}
                       </p>
 
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-2 w-full py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-medium transition-all duration-300"
-                      >
-                        {project.type === "github" ? (
-                          <>
-                            <Github className="w-4 h-4" />
-                            View on GitHub
-                          </>
-                        ) : (
-                          <>
+                      <div className="flex flex-col gap-2">
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center gap-2 w-full py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-medium transition-all duration-300"
+                        >
+                          <Github className="w-4 h-4" />
+                          View on GitHub
+                        </a>
+
+                        {project.demo && (
+                          <a
+                            href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center gap-2 w-full py-2 rounded-lg bg-green-600 hover:bg-green-700 text-white font-medium transition-all duration-300"
+                          >
                             <ExternalLink className="w-4 h-4" />
                             Live Demo
-                          </>
+                          </a>
                         )}
-                      </a>
+                      </div>
                     </div>
                   </div>
                 </Card3D>
