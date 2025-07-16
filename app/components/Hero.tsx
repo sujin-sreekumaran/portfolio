@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { GitlabIcon as GitHub, Linkedin, Mail } from "lucide-react";
-import { smoothScrollTo } from "@/utils/smoothScroll";
+import { smoothScrollTo } from "../../utils/smoothScroll";
 
 // Enhanced typing animation component
 const TypingAnimation = ({ text, delay = 0 }: { text: string; delay?: number }) => {
