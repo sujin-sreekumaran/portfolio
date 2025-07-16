@@ -1,8 +1,8 @@
 import "./globals.css";
 import { Inter, Space_Grotesk } from "next/font/google";
 import type React from "react";
-import { ThemeProvider } from "@/components/theme-provider";
-import Navigation from "@/app/components/Navigation";
+import { ThemeProvider } from "../components/theme-provider";
+import Navigation from "./components/Navigation";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space" });

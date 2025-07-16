@@ -14,7 +14,7 @@ import {
   Cpu,
   ChevronUp,
 } from "lucide-react";
-import { smoothScrollTo } from "@/utils/smoothScroll";
+import { smoothScrollTo } from "../../utils/smoothScroll";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
